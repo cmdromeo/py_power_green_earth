@@ -186,6 +186,15 @@ footer p{color:color-mix(in srgb,var(--deep-fg) 75%,transparent);max-width:44ch;
 .f-word{font-family:var(--display);font-weight:900;font-stretch:62%;text-transform:uppercase;font-size:clamp(2.4rem,9.2vw,8.6rem);line-height:.85;color:transparent;-webkit-text-stroke:1.5px color-mix(in srgb,var(--deep-fg) 22%,transparent);margin-top:40px;white-space:nowrap;overflow:hidden}
 .f-bottom{border-top:1px solid color-mix(in srgb,var(--deep-fg) 15%,transparent);margin-top:20px;padding-top:18px;font-size:.85rem;color:color-mix(in srgb,var(--deep-fg) 65%,transparent)}
 
+.f-bottom{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between}
+.qori{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--deep-fg);padding:6px 14px 6px 6px;border-radius:999px;border:1px solid color-mix(in srgb,var(--deep-fg) 18%,transparent);min-height:44px}
+.qori:hover{border-color:#F4B740}
+.q-txt{font-size:.8rem;color:color-mix(in srgb,var(--deep-fg) 65%,transparent);padding-left:8px}
+.q-mark{width:32px;height:32px;border-radius:50%;background:#F4B740;color:#0E1726;display:grid;place-items:center;font-family:var(--display);font-weight:900;font-size:1.05rem}
+.q-name{display:flex;flex-direction:column;line-height:1}
+.q-name b{font-family:var(--display);font-weight:900;letter-spacing:.14em;font-size:.95rem}
+.q-name small{font-size:.66rem;letter-spacing:.08em;color:color-mix(in srgb,var(--deep-fg) 70%,transparent);margin-top:2px}
+
 /* barra móvil */
 .mob{display:none}
 @media(max-width:760px){
@@ -387,7 +396,14 @@ footer p{color:color-mix(in srgb,var(--deep-fg) 75%,transparent);max-width:44ch;
       </div>
     </div>
     <div class="f-word" aria-hidden="true">Power Green Earth</div>
-    <div class="f-bottom">© 2026 Power Green Earth (PGE) · Perú</div>
+    <div class="f-bottom">
+      <span>© 2026 Power Green Earth (PGE) · Perú</span>
+      <a class="qori" href="https://wa.me/51999448268?text=Hola%20QORI%20Soluciones%2C%20vi%20la%20web%20de%20Power%20Green%20Earth" target="_blank" rel="noopener" aria-label="Sitio desarrollado por QORI Soluciones">
+        <span class="q-txt">Desarrollado por</span>
+        <span class="q-mark" aria-hidden="true">Q</span>
+        <span class="q-name"><b>QORI</b><small>Soluciones</small></span>
+      </a>
+    </div>
   </div>
 </footer>
 
@@ -446,3 +462,4 @@ footer p{color:color-mix(in srgb,var(--deep-fg) 75%,transparent);max-width:44ch;
 
 </body>
 </html>
+
